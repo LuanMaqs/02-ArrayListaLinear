@@ -18,6 +18,7 @@ int lista[MAX]{};
 int nElementos = 0;
 
 
+
 int main()
 {
 	menu();
@@ -105,5 +106,23 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+	int busca;
+	bool encontrado = false;
 
+	cout << " Digite o elemento que deseja buscar : ";
+	cin >> busca;
+
+	for (int n = 0; n < nElementos; n++) 
+	{
+		if (lista[n] == busca) {
+			cout << " Elemento " << busca << " encontrado na posicao: " << n << endl;
+			encontrado = true;
+			break;
+		}
+		
+	}
+	if (!encontrado)
+	{
+		cout << " Elemento " << busca << " nao encontrado " << endl;
+	}
 }
