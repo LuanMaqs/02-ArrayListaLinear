@@ -118,6 +118,7 @@ void buscarElemento()
 			cout << " Elemento " << busca << " encontrado na posicao: " << n << endl;
 			encontrado = true;
 			break;
+
 		}
 		
 	}
